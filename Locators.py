@@ -1,0 +1,22 @@
+from selenium.webdriver.common.by import By
+
+class UIElementsLocators:
+    text_field_input = (By.ID, "textField")
+    output_text_field = (By.XPATH, "//*[@id='root']/div[2]/div[1]/div[1]/div[2]/div")
+    text_area_input = (By.ID, "textArea")
+    output_text_area_field= (By.XPATH,"//*[@id='root']/div[2]/div[1]/div[2]/div[2]/div")
+    button_click_me = (By.ID,"ui-click-button")
+    output_count_clic_me = (By.XPATH, "//*[@id='root']/div[2]/div[1]/div[3]/div[2]/div")
+    checkbox_single = (By.ID, "ui-single-checkbox")
+    output_checkbox_single = (By.XPATH, "//*[@id='root']/div[2]/div[1]/div[4]/div[2]/div")
+    checkbox_option1 = (By.ID, "ui-checkbox-option1")
+    checkbox_option2 = (By.ID, "ui-checkbox-option2")
+    checkbox_option3 = (By.ID, "ui-checkbox-option3")
+    output_multi_checkbox = (By.ID, "//*[@id='root']/div[2]/div[1]/div[5]/div[2]/div")
+    radio_button_R1 = (By.CSS_SELECTOR,"[data-testid='ui-radio-Radio 1']")
+    radio_button_R2 = (By.CSS_SELECTOR,"[data-testid='ui-radio-Radio 2']")
+    radio_button_R3 = (By.CSS_SELECTOR,"[data-testid='ui-radio-Radio 3']")
+    output_radio_buttons = (By.XPATH,"//*[@id='root']/div[2]/div[1]/div[6]/div[2]/div")
+    DROPDOWN = (By.CSS_SELECTOR,"[data-testid='ui-single-dropdown']")
+    dropdown_select_Canada = (By.CSS_SELECTOR,"[data-testid='ui-single-dropdown']")
+    output_dropdown = (By.XPATH,"//*[@id='root']/div[2]/div[1]/div[7]/div[2]/div")
